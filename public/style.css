@@ -1,0 +1,133 @@
+h1{
+    font-size: 30px;
+}
+body {
+    text-align: center;
+    background-image: linear-gradient(0deg, dodgerblue 0%, yellow 100%);
+    background-repeat: no-repeat;
+    font-family: monospace;
+    justify-content: center;
+}
+input{
+    padding: 5px;
+    margin: 10px 0px;
+    border: 2px solid #eee;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 10px;
+    width: 50%;
+    font-family:inherit;
+    font-size: inherit;
+}
+select{
+    padding: 5px;
+    margin: 10px 0px;
+    border: 2px solid #eee;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 10px;
+    width: 51%;
+    font-family:inherit;
+    font-size: inherit;
+}
+button:hover{
+    background-color: #3F6B15;
+}
+.side-html-add {
+    text-align: center;
+    height: 85.5vh;
+}
+.side-html-delete {
+    text-align: center;
+    height: 95vh;
+}
+.api-span{
+    text-decoration: underline;
+}
+.exampel-div{
+    margin-top: 15px;
+    width: 300px;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+}
+.div-code{
+    text-align:left;
+    font-size: 14px;
+}
+.response-div{
+    width: 300px;
+    height: 250px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+    text-align: left;
+}
+.add-div{
+    margin-top: 15px;
+    width: 300px;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+}
+.remove-div{
+    margin-top: 15px;
+    width: 300px;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+}
+.game{
+    color: black;
+}
+.button-56 {
+    align-items: center;
+    background-color: #2a01f9;
+    border: 2px solid #111;
+    border-radius: 8px; box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+.button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+.button-56:hover {
+    outline: 0;
+}
+@media (min-width: 768px) 
+{
+.button-56 {
+    padding: 0 40px; }}
