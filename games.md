@@ -1,4 +1,4 @@
-const games = { games: [{id: 1, name: "N2k23", platform: "Steam", isFree: "No", type: "Sport"},
+{ games: [{id: 1, name: "N2k23", platform: "Steam", isFree: "No", type: "Sport"},
 {id: 2, name: "Counter-Strike Global Offensive", platform: "Steam", isFree: "Yes", type: "Action"},
 {id: 3, name: "Planet zoo", platform: "Steam", isFree: "No", type: "Playground"},
 {id: 4, name: "Speed runners", platform: "Steam", isFree: "No", type: "Action"},
