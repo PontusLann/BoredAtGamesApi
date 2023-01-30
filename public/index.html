@@ -9,11 +9,14 @@
 <body>
     <div>
         <h1><span class="api-span">BoredAtGamesApi</span> is a free API for you have grown tired at games!</h1>
-        <h2>How to use</h2>
+        <h2>What Game Should you play today?</h2>
+        <button type="button" class="button-56" id="random-game">Tell Me</button>
+        <div class="game-div"></div>
+        <h2>How to use API</h2>
         <p>In order to use the API please make a GET request to the following URL</p>
         <p>Wanna se all games?</p>
         <div class="exampel-div">
-            <code class="div-code"><span>Get</span>: Write URL here</code>
+            <p class="paragraph"><span>Get</span>: <a href="http://localhost:3000/games" class="games-p">http://localhost:3000/games</a> </p>
         </div>
         <p>Example response =></p>
         <div class="response-div"><p>
@@ -35,14 +38,16 @@
         <p>Missing a game you would like to add?
             press the link below:
         </p>
-        <div class="add-div"><code class="div-code"><span>Post</span>:
-        <a href="addgame.html" class="game">Add Game</a></code></div>
+        <div class="add-div">
+            <p class="paragraph"><span>Post</span>:
+        <a href="http://localhost:3000/addgames" class="game">http://localhost:3000/addgames</a></p></div>
         <p>I am forced by school laws to make it able for you to remove a game but please dont!
             use the following URL:
         </p>
         <div class="remove-div">
-            <p><span>Pull</span>:<a href="deletegame.html" class="game">deleteGame</a></p>
+            <p class="paragraph"><span>Pull</span>:<a href="http://localhost:3000/removegames" class="game">http://localhost:3000/removegames</a></p>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

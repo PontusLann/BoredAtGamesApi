@@ -9,29 +9,30 @@
 <body>
     <h1>Fill the boxes to add your game!</h1>
     <div class="side-html-add">
-        <form action="" method="post">
-            <input type="text" placeholder="Name">
-            <select name="placeholder" id="placeholder">
+        <button class="button-56">Home</button>
+        <form action="/addgame" method="post">
+            <input type="text" placeholder="Name" name="name">
+            <select name="platform">
                 <option value="" disabled selected>Which platform?</option>
                 <option value="Steam">Steam</option>
                 <option value="Ubisoft Connect">Ubisoft Connect</option>
                 <option value="Epic Games">Epic Games</option>
                 <option value="Playstation 5">Playstation 5</option>
             </select>
-            <select name="isFree" id="isFree">
+            <select name="isFree">
                 <option value="" disabled selected>Is it free?</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
             </select>
-            <select name="type" id="type">
+            <select name="type">
                 <option value="" disabled selected>What type?</option>
                 <option value="Action">Action</option>
                 <option value="Adventure">Adventure</option>
                 <option value="Playground">Playground</option>
                 <option value="Sport">Sport</option>
             </select>
+            <button type="submit" name="submit" class="button-56" id="add-btn">Add Game</button>
         </form>
-        <button type="submit" class="button-56">Add Game</button>
     </div>
 </body>
 </html>

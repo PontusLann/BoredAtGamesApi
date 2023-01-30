@@ -81,6 +81,15 @@ button:hover{
 .game{
     color: black;
 }
+.games-p{
+    color: black;
+}
+.paragraph{
+    text-align: left;
+    font-size: 14px;
+    position: relative;
+    bottom: 7px;
+}
 .button-56 {
     align-items: center;
     background-color: #2a01f9;
@@ -131,3 +140,15 @@ button:hover{
 {
 .button-56 {
     padding: 0 40px; }}
+#random-game{
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
+#check-btn{
+    margin-bottom: 150px;
+}
+#add-btn{
+    position: absolute;
+    top: 350px;
+    right: 550px;
+}
