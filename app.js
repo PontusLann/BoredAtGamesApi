@@ -55,10 +55,10 @@ app.get("/games/:id", (req, res) => {
 
     const data = games.find(x => x.id == id)
     if(id > 0 && id <= games.length){
-        res.send(data)
+        res.send(200, data)
     }
     else{
-        res.send("Id dosent exists")
+        res.send(400);
     }
     
 })
@@ -97,26 +97,17 @@ app.post("/addgame", (req, res) => {
     res.send("Added game")
 })
 
-app.get("/removegames", (req, res) => {
-    res.sendFile(__dirname + "/public/deletegame.html")
-})
+app.delete("/removegame/:id", (req, res) => {
 
-app.get("/removegame/:id", (req, res) => {
-    var id = req.params.id
-    const index = games.findIndex(x => x.id === id)
-    console.log(games.findIndex(x => x.id === id))
-    console.log(id)
-    console.log(req.params)
-    games.splice(index, 1)
-    res.send("deleted")
-    /*
-    if(id > 0 && id <= games.length){
+    const index = games.findIndex(x => x.id == req.params.id)
+    
+    if(games[index] != null){
+        games.splice(index, 1)
+        res.send(200);
     }
     else{
-        res.send("Id dosent exists")
+        res.send(400);
     }
-    console.log(index);
-    */
 })
 
 
